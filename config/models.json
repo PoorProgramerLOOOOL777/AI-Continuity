@@ -1,0 +1,35 @@
+{
+  "models": [
+    {
+      "id": "claude-sonnet",
+      "provider": "gateway",
+      "enabled": true
+    },
+    {
+      "id": "gpt-4.1",
+      "provider": "gateway",
+      "enabled": true
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "provider": "gateway",
+      "enabled": true
+    },
+    {
+      "id": "deepseek-chat",
+      "provider": "gateway",
+      "enabled": true
+    }
+  ],
+  "retry": {
+    "max_models": 4,
+    "retry_on_status": [
+      429,
+      500,
+      502,
+      503,
+      504
+    ]
+  },
+  "notes": "Sustituye estos IDs por los nombres exactos que exponga tu gateway. No todos los IDs están disponibles en todas las cuentas."
+}
